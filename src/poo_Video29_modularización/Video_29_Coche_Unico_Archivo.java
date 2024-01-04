@@ -1,6 +1,6 @@
-package poo_Video29_modularización_Unico_archivo;
+package poo_Video29_modularización;
 
-public class Video_29_Coche {
+public class Video_29_Coche_Unico_Archivo {
 	
 	int ruedas;
 	int largo;
@@ -8,7 +8,7 @@ public class Video_29_Coche {
 	int motor;
 	int peso;
 	
-	public Video_29_Coche() {
+	public Video_29_Coche_Unico_Archivo() {
 		
 		ruedas=4;
 		largo=2000;
@@ -19,10 +19,9 @@ public class Video_29_Coche {
 	
 	public static void main(String args[]) {
 		
-		Video_29_Coche Renault= new Video_29_Coche();
+		Video_29_Coche_Unico_Archivo Renault= new Video_29_Coche_Unico_Archivo();
 		
 		System.out.println("Este coche tiene " + Renault.ruedas + " ruedas.");		
-		
 		
 	}
 	
