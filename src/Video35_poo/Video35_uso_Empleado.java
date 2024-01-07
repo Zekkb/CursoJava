@@ -1,4 +1,4 @@
-package poo_Video35;
+package Video35_poo;
 
 import java.util.*;
 
@@ -6,7 +6,7 @@ public class Video35_uso_Empleado {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		/*
 		//Se instancian los empleados
 		Empleado empleado1=new Empleado("Paco Gómez", 85000, 1990,12,17);
 		
@@ -34,6 +34,47 @@ public class Video35_uso_Empleado {
 		System.out.println("Nombre: "+ empleado3.dameNombre() +
 				" Sueldo: " + empleado3.dameSueldo() + 
 				" Fecha de Alta: " + empleado3.dameFechaContrato());
+		*/
+		//Se realizan mediante array y se recorrer con fors
+		
+		//se define 3 empleados
+		Empleado[] misEmpleados= new Empleado[3];
+		
+		//Se instancia los empleados
+		misEmpleados[0]=new Empleado("Paco Gómez", 85000, 1990,12,17);
+		
+		misEmpleados[1]=new Empleado("Maria Martín", 95000, 1995,06,02);
+		
+		misEmpleados[2]=new Empleado("Paco Gómez", 105000, 2002,03,15);
+		
+		//Se aumentan los sueldos de los empleados
+		/*
+		for(int i=0;i<3;i++) {
+			misEmpleados[i].subeSueldo(5);
+		}
+		*/
+		//Se utiliza un for each o mejorado
+		for(Empleado e: misEmpleados) {
+			e.subeSueldo(5);
+		}
+		
+		
+		//Se imprimen la información de los empleados
+		/*
+		for(int i=0;i<3;i++) {
+			System.out.println("Nombre: " + misEmpleados[i].dameNombre() +
+					" Sueldo: " + misEmpleados[i].dameSueldo() +
+					"Fecha de Alta: " + misEmpleados[i].dameFechaContrato());
+		}
+		*/
+		
+		//Se utiliza un for each o mejorado
+		for(Empleado i: misEmpleados) {
+			System.out.println("Nombre: " + i.dameNombre() +
+					" Sueldo: " + i.dameSueldo() +
+					"Fecha de Alta: " + i.dameFechaContrato());
+		}
+		
 		
 	}
 
