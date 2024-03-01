@@ -1,6 +1,6 @@
 package Video37_static;
 
-public class Video37_static {
+public class Video37_uso_Empleado_static {
 	
 	public static void main(String[] args) {
 		
